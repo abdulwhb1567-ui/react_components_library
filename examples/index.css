@@ -1,0 +1,187 @@
+/* Example Page Styles */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafb;
+}
+
+.header {
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.125rem;
+  opacity: 0.95;
+}
+
+.main-content {
+  flex: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 4rem;
+}
+
+.section h2 {
+  font-size: 1.875rem;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+  border-bottom: 3px solid #3b82f6;
+  padding-bottom: 0.75rem;
+  width: fit-content;
+}
+
+.section-description {
+  color: #6b7280;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.component-section {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+}
+
+.subsection {
+  margin-bottom: 2rem;
+}
+
+.subsection:last-child {
+  margin-bottom: 0;
+}
+
+.subsection h3 {
+  font-size: 1.25rem;
+  color: #374151;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  align-items: center;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.card-content {
+  color: #374151;
+}
+
+.card-content h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #1f2937;
+}
+
+.card-content ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+.card-content li {
+  margin-bottom: 0.5rem;
+  color: #6b7280;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.empty-state p {
+  color: #6b7280;
+  margin-bottom: 1rem;
+}
+
+.footer {
+  background-color: #1f2937;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header h1 {
+    font-size: 1.875rem;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .main-content {
+    padding: 2rem 1rem;
+  }
+
+  .section {
+    margin-bottom: 2rem;
+  }
+
+  .button-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .component-section {
+    padding: 1.5rem;
+  }
+}
+
+/* Animations */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}

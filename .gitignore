@@ -1,0 +1,97 @@
+# React Components Library
+
+## Project Structure
+
+```
+react_components_library/
+├── src/
+│   ├── components/
+│   │   ├── Button.tsx
+│   │   ├── Card.tsx
+│   │   ├── Modal.tsx
+│   │   └── index.ts
+│   ├── styles/
+│   │   └── index.css
+│   └── index.ts
+├── examples/
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+├── index.html
+├── package.json
+├── tsconfig.json
+├── tsconfig.node.json
+├── vite.config.ts
+├── README.md
+└── LICENSE
+```
+
+## Development
+
+### Install Dependencies
+```bash
+npm install
+```
+
+### Run Dev Server
+```bash
+npm run dev
+```
+
+The demo page will open at `http://localhost:5173`
+
+### Build Library
+```bash
+npm run build
+```
+
+This creates the distributable library in the `dist/` folder.
+
+## Component API
+
+### Button
+- Variants: primary, secondary, danger, success, outline
+- Sizes: sm, md, lg
+- Props: variant, size, fullWidth, isLoading, disabled, children
+
+### Card
+- Props: title, subtitle, image, header, body, footer, elevated, children
+
+### Modal
+- Props: isOpen, onClose, title, header, body, footer, showCloseButton, closeOnOverlayClick, size, children
+
+## Features Implemented
+
+✅ **Button Component**
+- 5 visual variants (primary, secondary, danger, success, outline)
+- 3 size options (sm, md, lg)
+- Full width variant
+- Loading state with spinner animation
+- Disabled state
+- Accessible with proper focus states
+
+✅ **Card Component**
+- Title and subtitle support
+- Image support with alt text
+- Flexible header, body, footer sections
+- Elevated variant for emphasis
+- Responsive grid layout
+- Hover effects
+
+✅ **Modal Component**
+- Overlay backdrop with click-to-close
+- Smooth animations (fade-in, slide-up)
+- Keyboard support (Escape key)
+- Close button
+- Customizable header, body, footer
+- Three size variants (sm, md, lg)
+- Body scroll prevention
+- Accessible ARIA attributes
+
+## Styling
+
+- CSS custom properties for easy theming
+- Responsive design
+- Smooth transitions and animations
+- Accessible color contrasts
+- Focus states for keyboard navigation
